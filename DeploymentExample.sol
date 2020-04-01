@@ -35,4 +35,5 @@ contract DeploymentExample is Ownable {
   function kill() public onlyOwner {
     selfdestruct(address(uint160(owner())));
   }
+  
 }
